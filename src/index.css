@@ -1,0 +1,128 @@
+.app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Roboto Condensed, Arial, sans-serif;
+}
+
+body {
+    background-color:rgb(239, 227, 227);
+    background-image: url(./assets/stock_image.jpg);
+}
+
+form { 
+	display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+p,form label {
+    margin-bottom: 5px;
+    font-weight:bold;
+}
+
+form input {
+    padding: 8px;
+    font-size: 16px;
+    margin-right:20px;
+    margin-left:20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245, 0.6);
+}
+
+.stock-list {
+    display: none;
+}
+
+.stock-form{
+    background-color: #f4f4f48a;
+    border-radius: 10px;
+    padding:10px;
+}
+
+button {
+    margin:20px;
+    padding: 10px;
+    background-color: #07192b;
+    color: white;
+    border: none;
+	border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+button:hover{
+    position:relative;
+    top:2px;
+    color:#FCAE1E;
+    transition: 0.5s ease-in-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+
+}
+
+th {
+    background-color: #f4f4f4b8;
+}
+
+.title{
+    font-size: 4em;
+}
+
+.last-word{
+    color:#FCAE1E;
+}
+
+.profit {
+    color: rgb(177, 251, 177);
+    font-weight: bold;
+}
+
+.loss {
+    color: rgb(255, 166, 166);
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 500px) {
+
+	body {
+		background-image: url(./assets/stock_image.jpg);
+		background-color:rgb(200,200,200);
+	}
+
+	.app {
+		max-width: 600px;
+		margin: 0 auto;
+		padding: 20px;
+		font-family:'Gill Sans', 'Gill Sans MT', Calibri;
+		font-weight:bold;
+	}
+
+    .stock-table {
+        display: none;
+    }
+
+    .stock-list {
+        display: block;
+        text-align: left;
+    }
+}
+	
+  
